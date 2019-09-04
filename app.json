@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/search/search",
+    "pages/list/list",
+    "pages/user/user",
+    "pages/item/item"
+  ],
+  "window": {
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarBackgroundColor": "#399"
+  },
+  "debug": false,
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search-active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user-active.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 30000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json"
+}

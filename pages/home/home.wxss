@@ -1,0 +1,41 @@
+/* pages/home/home.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: #f9f9f9;
+  font-family: -apple-system-font, 'Helvetica Neue', Helvetica, 'Microsoft YaHei', sans-serif;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.slider swiper{
+  height: 400rpx;
+}
+.slider image {
+  height: 400rpx;
+  width:100%; 
+}
+.board {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.board-item{
+  margin: 40rpx;
+  padding: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  border: 2rpx solid #ccc;
+  border-radius: 4rpx;
+  box-shadow: 0 0 0 2rpx  #ccc ;
+  box-sizing: border-box;
+}
+.board image{
+  width: 60rpx;
+  height: 60rpx;
+
+}

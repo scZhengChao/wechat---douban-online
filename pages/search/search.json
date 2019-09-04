@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "搜索 « 电影 « 豆瓣",
+  "backgroundColor": "#696969",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 100
+}

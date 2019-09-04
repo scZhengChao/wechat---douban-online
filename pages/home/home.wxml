@@ -1,0 +1,28 @@
+<!--pages/home/home.wxml-->
+<view class='container'>
+  <view class='slider'>
+    <swiper
+      indicator-dots = "true"
+      autoplay="true"
+      interval="2000"
+      duration="1000"
+      circular=true
+    >
+      <swiper-item wx:for="{{banner.content}}" wx:key="{{item.id}}">
+        <navigator url='../list/list?key={{item.key}}&title={{item.title}}'><image src="{{item.image}}"  mode="aspectFill" /></navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='board'>
+    <scroll-view scroll-y>
+      <navigator wx:for="{{list}}" wx:key ='{{index}}' hover-class='none'
+      url="../list/list?key={{item.key}}&title={{item.title}}"
+      >
+        <view class='board-item'>
+          <text>{{item.title}}</text>
+          <image src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAuSURBVDhPYxgFeEECEBtAmOSBBUD8HoiHgSEgAz4AMVkGDJxmEKA4GkcGYGAAAISHC57AtKWOAAAAAElFTkSuQmCC' ></image>
+        </view>
+      </navigator>
+    </scroll-view>
+  </view>
+</view>

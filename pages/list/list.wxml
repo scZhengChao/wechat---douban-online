@@ -1,0 +1,25 @@
+<!--pages/list/list.wxml-->
+<view class='container'>
+ <loading hidden="{{ !loading }}">加载中...</loading>
+ <view class='header'>
+  <text>{{title}}</text>
+ </view>
+ <view  class='listBox'>
+    <navigator
+    class='item'
+    wx:for="{{list}}"
+    wx:key="{{item.id}}"
+    url='../item/item?id={{item.id}}'
+    >
+      <view>
+          <image  src='{{item.image}}' ></image> 
+      </view>
+      <view class='center'>
+        <view class='title'>{{item.title}}</view>
+        <view class='time'>{{item.time}}</view>
+        <view class='artist'>{{item.director}}</view>
+      </view>
+      <view><text class='mark'>{{item.mark}}</text></view>
+    </navigator>
+  </view>
+</view>

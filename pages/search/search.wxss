@@ -1,0 +1,62 @@
+/* pages/search/search.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: #f9f9f9;
+  font-family: -apple-system-font, 'Helvetica Neue', Helvetica, 'Microsoft YaHei', sans-serif;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.searchBox{
+  text-align: center;
+  border-bottom: 1rpx solid #ccc;
+  height: 80rpx;
+}
+.listBox{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.listBox  .item{
+  display: flex;
+  padding: 20rpx 40rpx;
+  border: 2rpx solid #eee;
+  cursor: pointer;
+}
+.listBox .center{
+  flex: 1;
+}
+.listBox image{
+  width: 128rpx;
+  height: 168rpx;
+  margin-right: 20rpx;
+}
+.listBox .time,.listBox .artist{
+  font-size: 36rpx;
+  margin-top: 10rpx;
+}
+.listBox .mark{
+  background: red;
+  display: inline-block;
+  width: 50rpx;
+  height: 40rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  color: white;
+  padding: 8rpx;
+}
+.tips{
+  text-align: center;
+  font-size: 40rpx;
+  margin-bottom: -40rpx;
+}
+.tips image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
